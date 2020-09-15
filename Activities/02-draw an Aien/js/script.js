@@ -26,12 +26,16 @@ fill(0);
 ellipse(250, 210, 100, 250);
 ellipse(390, 210, 100, 250);
 
-//Mouth Man
-
 //I really don't want to give my alien dude nostrils....
 fill(0);
 ellipse(330, 300, 5, 5);
 ellipse(310, 300, 5, 5);
+
+//Mouth Man
+stroke(110);
+strokeWeight(5);
+rectMode(CENTER);
+rect(320, 370, 50, 10);
 
 }
 
