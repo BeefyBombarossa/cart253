@@ -34,4 +34,19 @@ function setup() {
 
 function draw() {
 
+
+  // Moves the circle up and to the right
+  circleX += 1;
+  circleY -= 1;
+  // Makes the circle transparent red
+  fill(255,0,0);
+  // Displays the circle
+  ellipse(circleX,circleY,circleSize,circleSize);
+
+  //Makes a square go down from the center
+  squareY = squareY + 1;
+  //Makes the square transparent blue
+  fill(0,0,255);
+  // Displays the square
+  rect(squareX,squareY,squareSize,squareSize);
 }
