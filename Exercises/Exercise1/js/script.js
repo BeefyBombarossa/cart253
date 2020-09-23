@@ -3,7 +3,7 @@ EX 1 I like ta move it
 Gabriel Garces
 
 This is the exercise project where we move stuff
-This code might look complicated and awesome but the result is a lot less exciting than what you might xD
+This code might look complicated and awesome but the result is a lot less exciting than what you might think xD
 Btw, are you reading this Pippin?
 **************************************************/
 
