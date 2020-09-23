@@ -2,7 +2,9 @@
 EX 1 I like ta move it
 Gabriel Garces
 
-Here is a description of this template p5 project.
+This is the exercise project where we move stuff
+This code might look complicated and awesome but the result is a lot less exciting than what you might xD
+Btw, are you reading this Pippin?
 **************************************************/
 
 //Variable Thingy
@@ -17,6 +19,15 @@ let circleSize = 80;
 let squareX;
 let squareY;
 let squareSize = 65;
+
+//Defines starting point of image
+let imgX = 0;
+let imgY = 320;
+
+//Loads in the image thing
+function preload() {
+img = loadImage('moose.jpg');
+}
 
 //Canvas and starting positions for first circle and rectangle
 function setup() {
@@ -64,4 +75,9 @@ function draw() {
   fill(0,0,255);
   // Displays the square
   rect(squareX,squareY,squareSize,squareSize);
+
+//Makes the image move to the right
+  imgX = imgX + 1;
+//Image (Kind of obvious though)
+  image(img, imgX, imgY, 180, 180);
 }
