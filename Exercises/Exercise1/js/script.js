@@ -1,20 +1,17 @@
 /**************************************************
-Template p5 project
-Pippin Barr
+EX 1 I like ta move it
+Gabriel Garces
 
 Here is a description of this template p5 project.
 **************************************************/
 
-// setup()
-//
-// Description of setup() goes here.
-function setup() {
+//Variable Thingy
+let thon = 0;
 
+function setup() {
+  createCanvas(640, 640);
 }
 
-// draw()
-//
-// Description of draw() goes here.
 function draw() {
-
+  
 }
