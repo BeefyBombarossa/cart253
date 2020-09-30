@@ -79,5 +79,10 @@ function draw() {
   topphat.y = mouseY;
 
 //Oh no, with this code Rumba kills the hat guy
+//(WOW this took me AGES to figure out, and only because Im a dum dum)
+  let d = dist(topphat.x, topphat.y, rambo19.x, rambo19.y);
+  if (d < rambo19.w / 2 + topphat.w / 2) {
+    noLoop();
+  }
 
 }
