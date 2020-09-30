@@ -32,11 +32,20 @@ let topphat = {
 let treeman;
 let y = 0;
 
+let youDied = false;
+
+let f;
+
+let coffin;
+
 //Loading of the Thiccc ASSets
 function preload() {
   rambo19.image = loadImage("assets/images/Rambo.png");
   topphat.image = loadImage("assets/images/Boi.png");
   treeman = loadImage("assets/images/yeh.png");
+  f = loadImage("assets/images/F.jpg");
+  soundFormats('mp3');
+  coffin = loadSound('assets/sounds/F2');
 }
 //
 // Creation of le Canvas
@@ -83,6 +92,22 @@ function draw() {
   let d = dist(topphat.x, topphat.y, rambo19.x, rambo19.y);
   if (d < rambo19.w / 2 + topphat.w / 2) {
     noLoop();
+    youDied = true;
   }
+
+  if (youDied) {
+    // Gameover screen and fonts
+    background(f)
+    textFont("Helvetica");
+    textSize(100);
+    strokeWeight(4);
+    stroke(255);
+    textAlign(CENTER,CENTER);
+    fill(0,0,0);
+
+//Game Over Text
+    text("Only god can save you now",width/2,height/2);
+    coffin.play();
+    }
 
 }
