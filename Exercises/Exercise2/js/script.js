@@ -5,7 +5,7 @@ Hey Pippin, how you doing?
 Hopefully you're well
 You might be wondering what I'm typing here?
 Welp... Not even I know
-Also I forgot to commit my first thing stating that I started the pro
+Also I forgot to commit my first thing stating that I started the project
 Whoops....
 **************************************************/
 
@@ -65,8 +65,19 @@ function draw() {
 //Show Mr.Topphat
   image(topphat.image, topphat.x, topphat.y, topphat.w, topphat.h);
 
+//This is how Romba moves
+  noStroke();
+  rambo19.x += rambo19.vx;
+  rambo19.y += rambo19.vy;
+  if (rambo19.x > width) {
+    rambo19.x = 0;
+    rambo19.y = random(0, height);
+  }
+
 //Mouse hat code for following mouse
   topphat.x = mouseX;
   topphat.y = mouseY;
+
+//Oh no, with this code Rumba kills the hat guy
 
 }
