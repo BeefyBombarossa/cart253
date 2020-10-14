@@ -1,6 +1,10 @@
 // Cold Spy Simulation Gameation
 // by Gabriel Garces
 
+//HEY PIPPIN
+//While playtesting my personal record of gathering intel was 25
+//I dare you to gather more than 25 intel in one run! xD
+
 // Player guy
 let spyguy;
 
