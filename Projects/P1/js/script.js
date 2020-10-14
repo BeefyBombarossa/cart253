@@ -70,9 +70,9 @@ function setup() {
     // Generates random values for the arguments of the Intel
     let intelX = random(0, width);
     let intelY = random(0, height);
-    let intelSpeed = random(11,15);
+    let intelSpeed = random(9,13);
     let intelColor = color(255);
-    let intelRadius = 40;
+    let intelRadius = 50;
     // Creates new Intel objects with the random values
     let newIntel = new Intel(intelX, intelY, intelSpeed, intelColor, intelRadius);
     // Adds the new Intel object to the END of the array
