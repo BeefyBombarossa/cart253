@@ -54,7 +54,7 @@ function setup() {
   setupSound();
 
   sc = loadImage('assets/images/intel.png');
-  spoi = loadImage('assets/images/spyguy.png');
+  spoi = loadImage('assets/images/Spyguy.png');
   he = loadImage('assets/images/M41 Walker Bulldog.png');
   py = loadImage('assets/images/agent.png');
   py2 = loadImage('assets/images/agent.png');
